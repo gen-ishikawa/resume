@@ -1,0 +1,13 @@
+Bootstrapテンプレートのテスト
+startbootstrap-resume を入れてみる
+
+rails _4.2.3_ new resume  -d postgresql
+
+Gemfileに以下を追加
+gem 'bootstrap', '~> 4.0.0.beta2.1'
+gem 'font-awesome-rails'
+
+config/routes.rb に以下を追加
+root 'top#index'
+
+rails g controller Top index
